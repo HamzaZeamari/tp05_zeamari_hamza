@@ -10,8 +10,8 @@ export class AuthService {
 
 
   constructor(private http: HttpClient) { }
-  urlLog: string = "/login";
-  urlAuth: string = "/auth/";
+  urlLog: string = "/api/login";
+  urlAuth: string = "/api/auth/";
 
   public postLogin(login: string, password: string) : Observable<User>{
     let data: string = "login=" + login + "&password=" + password;
