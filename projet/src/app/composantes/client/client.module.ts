@@ -31,5 +31,8 @@ const appChild: Routes = [
     ControlComponent
   ],
   providers: [],
+  exports: [
+    ControlComponent
+  ]
 })
 export class ClientModule {}
